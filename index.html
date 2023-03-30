@@ -1,0 +1,103 @@
+<html>
+  <head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="myportfolio.css" />
+    <link rel="stylesheet" href="default.css" />
+    <script
+      src="https://kit.fontawesome.com/2e5a9c41cc.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="projects.js"></script>
+  </head>
+  <body id="body">
+    <div>Austine. Software Developer. Pentester</div>
+    <header id="header">
+      <div class="header">
+        <img
+          src="https://ik.imagekit.io/Jonnes/Kena_Delights/a.png?updatedAt=1679759897564"
+          alt="Logo"
+        />
+
+        <ul id="nav">
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="connect.html" target="_blank">Connect</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </div>
+      <button class="hamburger" id="shownav" onclick="showNav()">
+        <i class="fa-solid fa-bars" id="bars"></i>
+      </button>
+      <script>
+        var nav = document.getElementById("nav");
+        function showNav() {
+          nav.classList.toggle("show");
+          document.getElementById("body").classList.toggle("stop-scrolling");
+        }
+      </script>
+    </header>
+    <main id="main">
+      <section class="container display-flex about">
+        <div class="split-half">
+          <img
+            src="https://ik.imagekit.io/Jonnes/Kena_Delights/owner.png?updatedAt=1679756980595"
+            alt="Image"
+          />
+        </div>
+        <div class="split-half content-wrap slide-container">
+          <h2>About Me..</h2>
+          <div class="slide">
+            <h6>Skills</h6>
+            Hi, I'm Austine, I am a software developer and a cybersecurity
+            pentester with six years experience. I help build software solutions
+            for organizations and safeguard their resources. <br />
+          </div>
+          <div class="slide">
+            <h6>Hobby</h6>
+            I enjoy cycling, reading, and surfing the internet in my free time.
+            These hobbies provide me with physical exercise, mental stimulation,
+            and a way to connect with the world around me.
+          </div>
+        </div>
+        <script>
+          var slide = document.querySelectorAll(".slide");
+          slide[0].classList.add("active-slide");
+          var n = 0;
+          setInterval(function () {
+            if (n < slide.length) {
+              document
+                .querySelector(".slide.active-slide")
+                .classList.remove("active-slide");
+
+              slide[n].classList.add("active-slide");
+              n++;
+            } else {
+              n = 0;
+            }
+          }, 10000);
+        </script>
+      </section>
+      <section>
+        <div class="content-wrap">
+          <h2>Work Experience</h2>
+          <p>
+            I lead design at <a href="#">Matrix And Matrix Limited</a> for two
+            years, helping market the organizations and build various softwares.
+            <br />
+            Before that, I was engaged in a work and learn program at LexTech
+            where I acquired my cybersecurity skills for one year.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section>
+        <div class="content-wrap">
+          <h2>Lets Get In Touch..</h2>
+          WhatsApp: 674-453-654,<br />
+          Twitter: <a href="#">Tweet.Austine@twitter.com</a>,<br />
+          Instagram: 546-235-5678 <br />
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

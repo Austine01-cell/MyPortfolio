@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+  }
+  
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e;
+    color: #dedede;
+}
+header h1{
+    text-shadow: 0 0 3px #FF0000;
+    font-size: 40px;
+}
+header h3{
+    text-align: left;
+    text-shadow: 0 0 3px #FF0000;
+}
+header ul {
+    width: 20%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: gray;
+  }
+  form{
+    width: 100%;
+    padding: 10px;
+  }
+  input[type="text"]{
+    width: 50%;
+    border: 1px solid rgb(0, 255, 200);
+    padding: 5px;
+    border-radius: 5px;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  li{
+    float: left;
+  }
+  
+  li a:hover {
+    background-color: magenta;
+  }
+.content-wrap{
+    width: 800px;
+    margin: 0 auto;
+    padding: 60px 0;
+    font-size: 20px;
+}
+
+
+footer{
+    background-image: url("https://ik.imagekit.io/Jonnes/Kena_Delights/3d-geometric-abstract-background__1_.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1676350761747");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+footer h2{
+    text-shadow: 0 0 3px #FF0000;
+}

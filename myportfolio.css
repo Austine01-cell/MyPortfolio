@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+header{
+  background-color: gray;
+  transition: background-color 1.0s;
+}
+.header{
+    padding: 5px 10px;
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+}
+header h3{
+    text-align: left;
+    text-shadow: 0 0 3px #FF0000;
+}
+header img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    transition: left 0.3s;
+  }
+  .about img{
+    width: 70%;
+  }
+  li a{
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  
+  li a:hover {
+    color: rgb(248, 180, 53);
+  }
+  .slide{
+    display: none;
+    animation: fade 1.5s 1 linear;
+  }
+  @keyframes fade{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+.content-wrap{
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+footer{
+    background-image: url("https://ik.imagekit.io/Jonnes/Kena_Delights/background.png?updatedAt=1679756161779");
+    background-color: #1e1e1e;
+    background-position:bottom right;
+    background-repeat: no-repeat;
+}
+.hamburger{
+  background-color: transparent;
+  border: none;
+  display: none;
+  
+}
+.hamburger i{
+  font-size: 24px;
+  color: white;
+}
+.show{
+  left: 0%!important;
+}
+@media screen and (max-width: 950px){
+  .about img{
+    width: 100%;
+  }
+  header{
+    display: flex;
+  }
+  .header{
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  header ul{
+    position: fixed;
+    top: 77px;
+    flex-direction: column;
+    left: -100%;
+    background-color: #1e1e1e;
+    width: 100%;
+    height: 100%;
+  }
+  li{
+    margin: 10px 0px;
+    width: 100%;
+  }
+  li a{
+    width: 100%;
+  }
+  
+  .hamburger{
+    display: block;
+  }
+  footer{
+    background-size: 200px 100px;
+    
+  }
+}
